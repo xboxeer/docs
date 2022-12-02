@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # :::no-loc text="interface"::: (C# Reference)
 
-An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. Beginning with C# 8.0, an interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
+An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. An interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality. Beginning with C# 11, an interface may define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
@@ -28,7 +28,7 @@ An interface can be a member of a namespace or a class. An interface declaration
 
 ## Default interface members
 
-These preceding member declarations typically don't contain a body. Beginning with C# 8.0, an interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. In addition, beginning with C# 8.0, an interface may include:
+These preceding member declarations typically don't contain a body. An interface member may declare a body. Member bodies in an interface are the *default implementation*. Members with bodies permit the interface to provide a "default" implementation for classes and structs that don't provide an overriding implementation. An interface may include:
 
 - [Constants](const.md)
 - [Operators](../operators/operator-overloading.md)
@@ -45,7 +45,7 @@ Beginning with C# 11, an interface may declare `static abstract` and `static vir
 > [!IMPORTANT]
 > Method dispatch for `static abstract` and `static virtual` methods declared in interfaces is resolved using the compile time type of an expression. If the runtime type of an expression is derived from a different compile time type, the static methods on the base (compile time) type will be called.
 
-You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-abstract-interface-methods.md).
+You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-virtual-interface-members.md).
 
 ## Interface inheritance
 
@@ -74,7 +74,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## C# language specification
 
-For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the feature specification for [Default interface members - C# 8.0](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md)
+For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), the feature specification for [C# 8 - Default interface members](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md), and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md)
 
 ## See also
 

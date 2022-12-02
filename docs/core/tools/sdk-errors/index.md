@@ -4,7 +4,156 @@ description: A complete list of NETSDKxxxx errors, with links to more info where
 ms.topic: error-reference
 ms.date: 06/23/2022
 f1_keywords:
-- NETSDK
+- NETSDK1001
+- NETSDK1002
+- NETSDK1003
+- NETSDK1006
+- NETSDK1007
+- NETSDK1008
+- NETSDK1009
+- NETSDK1010
+- NETSDK1011
+- NETSDK1012
+- NETSDK1014
+- NETSDK1015
+- NETSDK1016
+- NETSDK1017
+- NETSDK1018
+- NETSDK1019
+- NETSDK1020
+- NETSDK1021
+- NETSDK1023
+- NETSDK1024
+- NETSDK1025
+- NETSDK1028
+- NETSDK1029
+- NETSDK1030
+- NETSDK1031
+- NETSDK1032
+- NETSDK1042
+- NETSDK1043
+- NETSDK1044
+- NETSDK1046
+- NETSDK1048
+- NETSDK1049
+- NETSDK1050
+- NETSDK1051
+- NETSDK1052
+- NETSDK1053
+- NETSDK1054
+- NETSDK1055
+- NETSDK1056
+- NETSDK1057
+- NETSDK1058
+- NETSDK1060
+- NETSDK1061
+- NETSDK1063
+- NETSDK1065
+- NETSDK1067
+- NETSDK1068
+- NETSDK1069
+- NETSDK1070
+- NETSDK1072
+- NETSDK1074
+- NETSDK1075
+- NETSDK1076
+- NETSDK1077
+- NETSDK1078
+- NETSDK1081
+- NETSDK1083
+- NETSDK1084
+- NETSDK1085
+- NETSDK1086
+- NETSDK1087
+- NETSDK1088
+- NETSDK1089
+- NETSDK1090
+- NETSDK1091
+- NETSDK1092
+- NETSDK1093
+- NETSDK1094
+- NETSDK1095
+- NETSDK1096
+- NETSDK1097
+- NETSDK1098
+- NETSDK1099
+- NETSDK1102
+- NETSDK1103
+- NETSDK1104
+- NETSDK1105
+- NETSDK1106
+- NETSDK1107
+- NETSDK1109
+- NETSDK1110
+- NETSDK1111
+- NETSDK1113
+- NETSDK1114
+- NETSDK1115
+- NETSDK1116
+- NETSDK1117
+- NETSDK1118
+- NETSDK1119
+- NETSDK1120
+- NETSDK1121
+- NETSDK1122
+- NETSDK1123
+- NETSDK1124
+- NETSDK1125
+- NETSDK1126
+- NETSDK1127
+- NETSDK1128
+- NETSDK1129
+- NETSDK1131
+- NETSDK1132
+- NETSDK1133
+- NETSDK1134
+- NETSDK1139
+- NETSDK1140
+- NETSDK1142
+- NETSDK1143
+- NETSDK1144
+- NETSDK1146
+- NETSDK1148
+- NETSDK1150
+- NETSDK1151
+- NETSDK1152
+- NETSDK1153
+- NETSDK1154
+- NETSDK1155
+- NETSDK1156
+- NETSDK1157
+- NETSDK1158
+- NETSDK1159
+- NETSDK1160
+- NETSDK1161
+- NETSDK1162
+- NETSDK1163
+- NETSDK1164
+- NETSDK1165
+- NETSDK1166
+- NETSDK1167
+- NETSDK1168
+- NETSDK1169
+- NETSDK1170
+- NETSDK1171
+- NETSDK1172
+- NETSDK1173
+- NETSDK1175
+- NETSDK1176
+- NETSDK1177
+- NETSDK1178
+- NETSDK1179
+- NETSDK1181
+- NETSDK1183
+- NETSDK1184
+- NETSDK1185
+- NETSDK1186
+- NETSDK1187
+- NETSDK1188
+- NETSDK1189
+- NETSDK1190
+- NETSDK1191
+- NETSDK1192
 ---
 # .NET SDK error list
 
@@ -82,7 +231,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |[NETSDK1079](netsdk1079.md)|The Microsoft.AspNetCore.All package is not supported when targeting .NET Core 3.0 or higher.  A FrameworkReference to Microsoft.AspNetCore.App should be used instead, and will be implicitly included by Microsoft.NET.Sdk.Web.|
 |[NETSDK1080](netsdk1080.md)|A PackageReference to Microsoft.AspNetCore.App is not necessary when targeting .NET Core 3.0 or higher. If Microsoft.NET.Sdk.Web is used, the shared framework will be referenced automatically. Otherwise, the PackageReference should be replaced with a FrameworkReference.|
 |NETSDK1081|The targeting pack for {0} was not found. You may be able to resolve this by running a NuGet restore on the project.|
-|NETSDK1082|There was no runtime pack for {0} available for the specified RuntimeIdentifier '{1}'.|
+|[NETSDK1082](netsdk1082.md)|There was no runtime pack for {0} available for the specified RuntimeIdentifier '{1}'.|
 |NETSDK1083|The specified RuntimeIdentifier '{0}' is not recognized.|
 |NETSDK1084|There is no application host available for the specified RuntimeIdentifier '{0}'.|
 |NETSDK1085|The 'NoBuild' property was set to true but the 'Build' target was invoked.|
@@ -100,7 +249,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1097|It is not supported to publish an application to a single-file without specifying a RuntimeIdentifier. You must either specify a RuntimeIdentifier or set PublishSingleFile to false.|
 |NETSDK1098|Applications published to a single-file are required to use the application host. You must either set PublishSingleFile to false or set UseAppHost to true.|
 |NETSDK1099|Publishing to a single-file is only supported for executable applications.|
-|NETSDK1100|To build a project targeting Windows on this operating system, set the EnableWindowsTargeting property to true.|
+|[NETSDK1100](netsdk1100.md)|To build a project targeting Windows on this operating system, set the EnableWindowsTargeting property to true.|
 |NETSDK1102|Optimizing assemblies for size is not supported for the selected publish configuration. Please ensure that you are publishing a self-contained app.|
 |NETSDK1103|RollForward setting is only supported on .NET Core 3.0 or higher.|
 |NETSDK1104|RollForward value '{0}' is invalid. Allowed values are {1}.|
@@ -110,7 +259,7 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1109|Runtime list file '{0}' was not found. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
 |NETSDK1110|More than one asset in the runtime pack has the same destination sub-path of '{0}'. Report this error to the .NET team here: <https://aka.ms/dotnet-sdk-issue>.|
 |NETSDK1111|Failed to delete output apphost: {0}.|
-|NETSDK1112|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
+|[NETSDK1112](netsdk1112.md)|The runtime pack for {0} was not downloaded. Try running a NuGet restore with the RuntimeIdentifier '{1}'.|
 |NETSDK1113|Failed to create apphost (attempt {0} out of {1}): {2}.|
 |NETSDK1114|Unable to find a .NET Core IJW host. The .NET Core IJW host is only available on .NET Core 3.1 or higher when targeting Windows.|
 |NETSDK1115|The current .NET SDK does not support .NET Framework without using .NET SDK Defaults. It is likely due to a mismatch between C++/CLI project CLRSupport property and TargetFramework.|
@@ -133,10 +282,10 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1132|No runtime pack information was available for {0}.|
 |NETSDK1133|There was conflicting information about runtime packs available for {0}.|
 |NETSDK1134|Building a solution with a specific RuntimeIdentifier is not supported. If you would like to publish for a single RID, specify the RID at the individual project level instead.|
-|NETSDK1135|SupportedOSPlatformVersion {0} cannot be higher than TargetPlatformVersion {1}.|
-|NETSDK1136|The target platform must be set to Windows (usually by including '-windows' in the TargetFramework property) when using Windows Forms or WPF, or referencing projects or packages that do so.|
-|NETSDK1137|It is no longer necessary to use the Microsoft.NET.Sdk.WindowsDesktop SDK. Consider changing the Sdk attribute of the root Project element to 'Microsoft.NET.Sdk'.|
-|NETSDK1138|The target framework '{0}' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.|
+|[NETSDK1135](netsdk1135.md)|SupportedOSPlatformVersion {0} cannot be higher than TargetPlatformVersion {1}.|
+|[NETSDK1136](netsdk1136.md)|The target platform must be set to Windows (usually by including '-windows' in the TargetFramework property) when using Windows Forms or WPF, or referencing projects or packages that do so.|
+|[NETSDK1137](netsdk1137.md)|It is no longer necessary to use the Microsoft.NET.Sdk.WindowsDesktop SDK. Consider changing the Sdk attribute of the root Project element to 'Microsoft.NET.Sdk'.|
+|[NETSDK1138](netsdk1138.md)|The target framework '{0}' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.|
 |NETSDK1139|The target platform identifier {0} was not recognized.|
 |NETSDK1140|{0} is not a valid TargetPlatformVersion for {1}. Valid versions include:|
 |[NETSDK1141](netsdk1141.md)|Unable to resolve the .NET SDK version as specified in the global.json located at {0}.|
@@ -179,8 +328,14 @@ This is a complete list of the errors that you might get from the .NET SDK while
 |NETSDK1178|The project depends on the following workload packs that do not exist in any of the workloads available in this installation: {0}.|
 |NETSDK1179|One of '--self-contained' or '--no-self-contained' options are required when '--runtime' is used.|
 |NETSDK1181|Error getting pack version: Pack '{0}' was not present in workload manifests.|
-|NETSDK1182|Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.|
+|[NETSDK1182](netsdk1182.md)|Targeting .NET 6.0 or higher in Visual Studio 2019 is not supported.|
 |NETSDK1183|Unable to optimize assemblies for Ahead of time compilation: a valid runtime package was not found. Either set the PublishAot property to false, or use a supported runtime identifier when publishing. When targeting .NET 7 or higher, make sure to restore packages with the PublishAot property set to true.|
 |NETSDK1184|The Targeting Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|
 |NETSDK1185|The Runtime Pack for FrameworkReference '{0}' was not available. This may be because DisableTransitiveFrameworkReferenceDownloads was set to true.|
 |NETSDK1186|This project depends on Maui Essentials through a project or NuGet package reference, but doesn't declare that dependency explicitly. To build this project, you must set the UseMauiEssentials property to true (and install the Maui workload if necessary).|
+|NETSDK1187|Package {0} {1} has a resource with the locale '{2}'. This locale has been normalized to the standard format '{3}' to prevent casing issues in the build. Consider notifying the package author about this casing issue.|
+|NETSDK1188|Package {0} {1} has a resource with the locale '{2}'. This locale is not recognized by .NET. Consider notifying the package author that it appears to be using an invalid locale.|
+|NETSDK1189|Prefer32Bit is not supported and has no effect for netcoreapp target.|
+|NETSDK1190|To use '{0}' in solution projects, you must set the environment variable '{1}' (to true). This will increase the time to complete the operation.|
+|NETSDK1191|A runtime identifier for the property '{0}' couldn't be inferred. Specify a rid explicitly.|
+|NETSDK1192|Targeting .NET 7.0 or higher in Visual Studio 2022 17.3 is not supported.|

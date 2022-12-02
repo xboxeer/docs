@@ -81,7 +81,7 @@ A *reference parameter* is used for passing arguments by reference. The argument
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="RefExample":::
 
-An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters using the syntax introduced in C# 7.
+An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="OutExample":::
 
@@ -131,7 +131,7 @@ The `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked on the cl
 
 ### Virtual, override, and abstract methods
 
-You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived class may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
+You use virtual, override, and abstract methods to define the behavior for a hierarchy of class types. Because a class can derive from a base class, those derived classes may need to modify the behavior implemented in the base class. A ***virtual*** method is one declared and implemented in a base class where any derived class may provide a more specific implementation. An ***override*** method is a method implemented in a derived class that modifies the behavior of the base class' implementation. An ***abstract*** method is a method declared in a base class that *must* be overridden in all derived classes. In fact, abstract methods don't define an implementation in the base class.
 
 Method calls to instance methods may resolve to either base class or derived class implementations. The type of a variable determines its *compile-time type*. The *compile-time type* is the type the compiler uses to determine its members. However, a variable may be assigned to an instance of any type derived from its *compile-time type*. The *run-time type* is the type of the actual instance a variable refers to.
 

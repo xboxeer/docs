@@ -64,8 +64,6 @@ Different options are available for:
 
 ### Options for displaying environment information and available commands
 
-<!-- markdownlint-disable MD012 -->
-
 The following options are available when `dotnet` is used by itself, without specifying a command or an application to run. For example, `dotnet --info` or `dotnet --version`. They print out information about the environment.
 
 - **`--info`**
@@ -238,7 +236,7 @@ The following additional tools are available as part of the .NET SDK:
 
 | Tool                                              | Function                                                     |
 | ------------------------------------------------- | ------------------------------------------------------------ |
-| dev-certs                                         | Creates and manages development certificates.                |
+| [dev-certs](dotnet-dev-certs.md)                  | Creates and manages development certificates.                |
 | [ef](/ef/core/miscellaneous/cli/dotnet)           | Entity Framework Core command-line tools.                    |
 | [user-secrets](/aspnet/core/security/app-secrets) | Manages development user secrets.                            |
 | [watch](dotnet-watch.md)                          | A file watcher that restarts or hot reloads an application when it detects changes in the source code. |
